@@ -38,17 +38,32 @@
 _`Tab`키를 통한 사이드바 접근_
 ![운용의 용이성 중 키보드 준수 사례 사이드바 w3.org](./assets/keyboard/keyboard-example-sidebar.png)
 
-_`Tab`키를 통한 링크 접근 1_
-![운용의 용이성 중 키보드 준수 사례 1-1 w3.org](<./assets/keyboard/keyboard-example1(w3.org).png>)
-
-_`Tab`키를 통한 링크 접근 2_
-![운용의 용이성 중 키보드 준수 사례 1-2 w3.org](<./assets/keyboard/keyboard-example2(w3.org).png>)
-
-_`Tab`키를 통한 링크 접근 3_
-![운용의 용이성 중 키보드 준수 사례 1-3 w3.org](<./assets/keyboard/keyboard-example3(w3.org).png>)
-
 **성공 기준 2.1.1 키보드** 조건을 만족한 사례는 이 글의 참고 자료가 된 W3 WCAG 페이지이다. 페이지에 처음 들어가서 `Tab`키를 누르면 가이드라인의 목차로 이동가능한 영역이 포커스되며 Mac의 voice over와 같은 정보보조장치에 의해 해당 영역이 어떤 콘텐츠를 가지고 있는지를 알려준다.
 
-그 다음, `Tab`키를 눌러 본문 콘텐츠에 접근하면 _링크 접근1_, _링크 접근2_, *링크 접근3*과 같이 콘텐츠에 포함된 링크를 위에서 아래로, 왼쪽에서 오른쪽으로 건너뛰며, 해당 영역이 다른 URL로 연결가능한 링크임을 알려준다. 키보드의 `Tab`키를 이용하여 사용자와 인터렉티브한 모든 콘텐츠에 접근가능함을 보여주는 사례이다.
-
 - 위 조건 충족 시 level A
+
+#### 성공기준 2.1.1 키보드 함정 방지
+
+- 설명
+
+키보드 인터페이스(가령 Tab 키)를 사용하는 키보드 포커스를 페이지의 구성요소로 이동할 수 있는 경우, 키보드 인터페이스만으로도 해당 구성요소에서 포커스를 이동시킬 수 있어야 한다. 수정되지 않은 화살표, 탭 키, 또는 다른 표준 종료 방법이 필요한 경우, 사용자에게 포커스를 이동시키는 방법에 대해 안내해야 한다.
+
+- 사례1: [W3 WCAG 페이지](https://www.w3.org/TR/WCAG21/)
+
+_`Tab`키를 통한 링크 접근 1_
+![운용의 용이성 중 키보드 함정 방지 준수 사례 1-1 w3.org](<./assets/keyboard-interruption/keyboard-interruption-example1(w3.org).png>)
+
+_`Tab`키를 통한 링크 접근 2_
+![운용의 용이성 중 키보드 함정 방지 준수 사례 1-2 w3.org](<./assets/keyboard-interruption/keyboard-interruption-example2(w3.org).png>)
+
+_`Tab`키를 통한 링크 접근 3_
+![운용의 용이성 중 키보드 함정 방지 준수 사례 1-3 w3.org](<./assets/keyboard-interruption/keyboard-interruption-example3(w3.org).png>)
+
+`Tab`키를 눌러 본문 콘텐츠에 접근하면 _링크 접근1_, _링크 접근2_, *링크 접근3*과 같이 콘텐츠에 포함된 링크를 위에서 아래로, 왼쪽에서 오른쪽으로 건너뛰며, 해당 영역이 다른 URL로 연결가능한 링크임을 알려준다. 키보드의 `Tab`키를 이용하여 링크와 같은 사용자와 인터렉티브한 콘텐츠에 접근가능함을 보여주는 사례다.
+
+- 사례 2: [patientslikeme.com/symptoms](https://www.patientslikeme.com/symptoms)
+
+_`Tab`키를 통한 콘텐츠 열기_
+![운용의 용이성 중 키보드 함정 방지 준수 사례 patientslikeme.com](<./assets/keyboard-interruption/keyboard-interruption-example(patientslikeme).png>)
+
+`Tab`키를 눌러 해당 페이지의 콘텐츠에 접근하다보면, 위의 사진과 같이 원래는 가려져 있지만 `Tab`키를 눌러 숨겨져있던 아코디언 메뉴 형식의 콘텐츠를 확인할 수 있다. 해당 대메뉴에서 `Tab`키를 누르면 인터렉티브한 소메뉴에 접근할 수 있고 포커스된 콘텐츠에서 `Enter`키를 누르면 해당 콘텐츠 링크로 이동이 가능하다.
