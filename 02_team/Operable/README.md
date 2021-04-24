@@ -151,7 +151,7 @@ _편지쓰기에서 숨은 참조 추가하기_
 - 사례: 인스타그램 스토리
   ![운용의 용이성 중 시간 제한 조정 기능 사례 instagram](./assets/timing-adjustable/timing-adjustable-example.png)
 
-위의 사례에서 시간 제한이 있는 스토리 내용을 더 보기 위해 스페이스바를 누르면 시간 제한이 멈춘다. 이는 위의 준수 기준 중 **연장(extend)**과 **이동, 깜밖임, 스크롤(Moving, blinking, scolling)**에 해당하는 사례다.
+위의 사례에서 시간 제한이 있는 스토리 내용을 더 보기 위해 스페이스바를 누르면 시간 제한이 멈춘다. 이는 위의 준수 기준 중 **연장(extend)** 과 **이동**, **깜박임**, **스크롤(Moving, blinking, scolling)** 에 해당하는 사례다.
 
 - 위 기준 충족 시 level A
 
