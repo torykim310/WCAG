@@ -115,7 +115,7 @@
     <figcaption>
         <cite><a href="https://news.samsung.com/global/samsung-introduces-galaxy-tab-s-a-super-amoled-tablet">삼성 뉴스 페이지의 요약본 제공</a> - by Samsung
     </figcaption>
-    <img src="images/summary.png" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/summary.png" width=100%/>
 </figure>
 
 #### 6. 발음(Pronunciation) - AAA
@@ -181,7 +181,7 @@
     <figcaption>
         <cite><a href="https://en.dict.naver.com/#/main">동일한 네비게이션 예시</a> - by NAVER
     </figcaption>
-    <img src="images/navigation.PNG" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/navigation.PNG" width=100%/>
 </figure>
 
 #### 4. 일관된 식별(Identification) - AA
@@ -199,7 +199,7 @@
     <figcaption>
         <cite><a href="https://www.google.com/search?q=fastcampus">일관된 label 작성 예시</a> - by Google
     </figcaption>
-    <img src="images/label.png" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/label.png" width=100%/>
 </figure>
 
 #### 5. 요구에 의한 변경(Change on Request) - AAA
@@ -228,27 +228,99 @@
 - 폼 내부에 필수로 작성해야 하는 구성 요소가 있는 경우
     - 작성되지 않은 필수 구성 요소가 있음을 알려준다.
     - aria-required(required와 중복 사용할 필요는 없다.)를 기제하거나, 더 복잡한 로직이 필요한 경우 aria-invalid 속성을 기제한다.
-    - aria-invalid를 통해 에러 메세지를 보내고 싶은 경우, [aria-describedby](https://nuli.navercorp.com/community/article/1132700?email=true) 속성에 특정 id 값을 삽입하여 해당 id 요소에 설정한 텍스트를 읽어줄 수 있도록 설계한다.
-    - alert 함수를 사용해서 사용자에게 경고 메세지를 읽어준다.
-    - 
+        - aria-invalid를 통해 에러 메세지를 보내고 싶은 경우, [aria-describedby](https://nuli.navercorp.com/community/article/1132700?email=true) 속성에 특정 id 값을 삽입하여 해당 id 요소에 설정한 텍스트를 읽어줄 수 있도록 설계한다. 또는 aria-errormessage 속성을 사용해 aria-invalid가 true인 경우에 에러 메세지를 노출할 수 있다.
+    - alert 함수를 사용해서 사용자 에이전트가 에러 메세지를 읽을 수 있게 한다.
+- 특정한 형식의 데이터 혹은 값을 작성해야하는 경우
+    - role을 [alertdialog](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html)로 설정한 에러메세지를 모달로 통지합니다. 
+        - 이 모달이 어떤 의미인지 알려주기 위해 aria-label 또는 aria-labelledby 속성을 포함해야 합니다.
+        - aria-describedby를 설정해서 상세한 내용을 전달할 수 있습니다.
+        - alertdialog 내부에 포커스 가능한 요소를 반드시 포함해야하며 모달이 열렸을 때 포커스가 그 요소로 이동해야 합니다.(동의, 닫기 등)
+        - 가능하면 alertdialog가 사라졌을 때 원래 포커스로 이동해야 합니다.
+    - 단순히 에러메세지를 전달하고 싶은경우 role을 alert로 설정할 수 있습니다.
+    - aria-invalid와 aria-errormessage 속성을 사용해 에러 메세지를 읽어준다.
+    - text로 충분히 이해할 수 있는 설명을 해준다.
+    - alert 함수를 사용해서 사용자 에이전트가 에러 메세지를 읽을 수 있게 한다.
 #### 사례
+
+<figure>
+    <figcaption>
+        <cite><a href="https://www.koreanair.com/login">aria-invalid, aria-describedby를 사용한 에러메세지 전달</a> - by 대한항공
+    </figcaption>
+    <img src="images/aria-error.png" width=100%/>
+</figure>
 
 #### 2. 레이블 또는 지시문(Labels or Instructions) - A
+사용자가 입력해야하는 구성 요소가 있는 경우, 해당 요소가 어떤 의미인지 알려주기 위해 label 태그를 사용하거나 지침을 제공해야한다.
 #### 적용가능 기술:
-#### 사례
+- 입력 구성 요소와의 관계를 설명할 수 있는 label을 제공한다.
+    - 상세한 설명이 필요한 경우 aria-describedby 속성을 사용해 해당 구성 요소의 설명을 제공한다.
+    - 간단한 설명이 필요한 경우 aria-labelledby 속성을 사용해 해당 구성 요소의 설명을 제공합니다.
+    - 단어와 매우 간단하게 label을 제공하고 싶은경우 aria-label에 원하는 설명을 구성 요소 내에 작성할 수 있다. 단 aria-labelledby 속성의 우선순위가 더 높기 때문에 두 속성 모두 사용된 경우 aria-labelledby를 설명한다.
+    - 공통된 label을 설정해야 하는 경우에는 role을 group으로 설정하고 label 속성을 삽입한 후 그 내부에 요소들을 삽입할 수 있다.
+    - 입력 형식을 text로 제공한다.
+    - text로 label을 삽입해서 유저 에이전트가 입력 구성 요소와의 관계를 읽어줄 수 있게 설정한다.
+    - form 내부에 fieldset으로 구역을 나누고 legend에 required를 텍스로 삽입한다.
 
 #### 3. 오류 수정 제안(Error Suggestion) - AA
+입력 오류를 감지했을 때 보안상 문제가 없는 선에서 사용자에게 수정안을 제시한다.
+
 #### 적용가능 기술:
-#### 사례
+- 필수로 작성해야하는 구성 요소에 아무 정보도 입력하지 않은 경우.
+    - 입력해야 할 구성요소가 남아있다는 것을 text로 설명한다.
+    - aria-required 속성을 사용한다.
+- 특정한 형식의 데이터 혹은 값을 작성해야하는 경우
+    - role을 [alertdialog](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html)로 설정하고 수정안을 모달로 제공합니다. 세부사항은 오류 식별에서 설명한 방법과 같습니다.
+    - 수정안을 text로 제공합니다.
+    - alert 함수를 사용해서 수정안을 제공한다.
+
+- 정해진 값의 집합중 하나를 꼭 입력해야 하는 경우
+    - role을 [alertdialog](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html)로 설정하고 집합을 모달로 제공합니다. 세부사항은 오류 식별에서 설명한 방법과 같습니다.
+    - 수정안(집합)을 text로 제공합니다.
+    - alert 함수를 사용해서 수정안집합)을 제공한다.
 
 #### 4. 오류 예방 - 법률, 금융, 데이터(Error Prevention - Legal, Financial, Data) - AA
+사용자에 대한 법률을 이행하해야 하고, 금융 거래가 발생하거나, 데이터 스토리지에서 사용자가 제어 가능한 데이터를 수정 또는 삭제하거나, 사용자의 테스트를 제출하는 웹페이지의 경우, 적어도 다음 중 하나를 준수 해야한다.
+
+- Reversible: 제출 사항을 되돌릴 수 있어야 한다.
+- Checked: 사용자가 입력한 데이터는 오류 사항을 점검할 수 있어야하고, 사용자가 입력 데이터를 수정할 수 있는 기회를 제공해야 한다.
+- Comfirmed: 제출하기 전에 올바른 정보인지 확인하고 검토할 수 있는 메커니즘을 제공해야 한다.
+
 #### 적용가능 기술:
+- 소득세를 신고하거나 물품을 구입하는 것 처럼 법접인 거래가 발생하는 경우
+    - 해당 웹 페이지는 취소 가능 절차를 충분히 설명해야한다.
+    - 해당 웹 페이지는 제출 사항을 수정할 수 있는 메커니즘을 제공해야 한다.
+    - 제출전 검토할 수 있는 요약페이지를 제공한다.
+- 정보가 삭제되는 경우
+    - 복구할 수 있는 기능을 제공한다.
+    - 정말 이 동작을 이행해도 되는지 사용자의 동의를 얻는 최종 확인 단계를 마련한다.
+    - checkbox를 클릭해야 제출이 가능하도록 한다.
+
 #### 사례
+
+<figure>
+    <figcaption>
+        <cite><a href="https://www.github.com">데이터 삭제전 동의 여부</a> - by github
+    </figcaption>
+    <img src="images/last-step.png" width=100%/>
+</figure>
 
 #### 5. 도움말(Help) - AAA
+사용자가 현재 작업중인 내용을 직접적으로 살펴보지 않고도 상황에 맞는 도움말을 통해 작업을 수행할 수 있게 한다. 상황별 도움말은 label이 기능을 충분히 설명하지 못하는 경우 제공한다.
+
 #### 적용가능 기술:
+- 모든 웹 페이지에 도움말 링크를 제공한다.
+- AI 챗봇과 같이 도움을 줄 수 있는 보조장치를 제공한다.
+- 
 #### 사례
+<figure>
+    <figcaption>
+        <cite><a href="https://www.samsungsvc.co.kr/">챗봇 서비스</a> - by Samgung
+    </figcaption>
+    <img src="images/chat-bot.png" width=100%/>
+</figure>
 
 #### 6. 오류 예방 - 전체(Error Prevention - All) - AAA
-#### 적용가능 기술:
-#### 사례
+장애를 가진 사용자는 일반 사용자보다 더 많은 실수를 유발할 수 있다. 따라서 사용자가 정보를 제출해야 하는 경우 다음 중 하나 이상을 준수해야 한다.
+- Reversible: 제출 사항을 되돌릴 수 있어야 한다.
+- Checked: 사용자가 입력한 데이터는 오류 사항을 점검할 수 있어야하고, 사용자가 입력 데이터를 수정할 수 있는 기회를 제공해야 한다.
+- Comfirmed: 제출하기 전에 올바른 정보인지 확인하고 검토할 수 있는 메커니즘을 제공해야 한다.
