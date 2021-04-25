@@ -1,6 +1,6 @@
 # Perceivalbe
 
-## 1.1. Text Alternatives
+## 1.1 충족 기준: Text Alternatives
 
 > Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
 
@@ -25,7 +25,7 @@
   <img src="./img/img-alt-2.png" width="800">
 </figure>
 
-### 1.1.1 Non-text Content
+### 1.1.1 충족 기준: Non-text Content
 
 아래와 같은 데이터 차트가 있다고 가정해보자.
 
@@ -46,7 +46,7 @@
 
 이러한 방식으로 대체 텍스트를 제공해주어 `non-text content`에 대한 접근성을 확보해줄 수 있다.
 
-## 1.2. Time-based Media
+## 1.2 충족 기준: Time-based Media
 
 > Provide alternatives for time-based media.
 
@@ -56,7 +56,7 @@
 
 > 1.2.4 자막, 1.2.5 오디오 설명, 1.2.7 확장형 오디오 설명 1.2.8 미디어 대체 수단, 1.2.9 오디오 전용에 대한 내용은 아래 내용들과 겹치는 부분이 많아 함께 설명했다.
 
-### 1.2.1 오디오전용 및 비디오전용 (사전 녹음 및 녹화)
+### 1.2.1 충족 기준: 오디오전용 및 비디오전용 (사전 녹음 및 녹화)
 
 - 사전 녹음된 오디오전용 및 사전 녹화된 비디오전용 미디어의 경우, 다음을 준수해야 한다.
   - 예외: 오디오 또는 비디오가 텍스트에 대한 미디어 대체수단이고, 대체수단임이 분명하게 명시된 경우
@@ -95,7 +95,7 @@
 </video>
 ```
 
-### 1.2.2 자막 (사전 녹음)
+### 1.2.2 충족 기준: 자막 (사전 녹음)
 
 - 모든 사전 녹음된 오디오 콘텐츠에는 자막을 제공해야 한다.
   - 예외: 미디어가 텍스트에 대한 미디어 대체수단이고, 대체수단임이 분명하게 명시된 경우
@@ -133,12 +133,12 @@
 
 따라서 적절한 속성값들을 적절히 활용해 접근성을 향상시켜야 한다.
 
-### 1.2.3 오디오 설명 또는 미디어 대체수단 (사전 녹화)
+### 1.2.3 충족 기준: 오디오 설명 또는 미디어 대체수단 (사전 녹화)
 
 - 사전 녹화된 비디오 콘텐츠의 시간기반 미디어에 대한 대체수단 또는 오디오 설명을 제공해야 한다.
   - 예외: 미디어가 텍스트에 대한 미디어 대체수단이고, 대체수단임이 분명하게 명시된 경우
 
-### 1.2.6 수어 (사전 녹화)
+### 1.2.6 충족 기준: 수어 (사전 녹화)
 
 - 모든 사전 녹음된 오디오 콘텐츠에는 수어 통역을 제공해야 한다.
   - 예외 없음
@@ -150,7 +150,7 @@
 
 자막 뿐만 아니라 수어 통역을 통해서 청각 장애인들이 이해하기 쉽도록 접근성을 고려해야 한다.
 
-## 1.3. 적용성
+## 1.3 충족 기준: 적용성
 
 > Create content that can be presented in different ways (for example simpler layout) without losing information or structure
 >
@@ -158,12 +158,12 @@
 
 간단히 요약하자면 정본, 구조 등이 손실없이 다른 방법들로 표현될 수 있도록 컨텐츠를 만들어야 한다는 것이다. 그리고 w3c - WCAG에 따르면 정보들은 색상, 크기 등의 시각적인 효과 등에만 의존하면 안되고, 화면의 가로나 세로 등의 특정 방향으로만 적용되면 안된다. 또한 사용자가 컨텐츠를 더 쉽게 볼 수 있도록 해야한다.
 
-### 1.3.1 Info and Relationships
+### 1.3.1 충족 기준: Info and Relationships
 
 - 전달되는 정보, 구조, 관계는 텍스트로 이용 가능해야 한다.
   - 필수 입력란 등은 빨간색으로 표시되는 등 그 의미를 알 수 있도록 한다.
 
-### 1.3.2 Meaningful Sequence
+### 1.3.2 충족 기준: Meaningful Sequence
 
 - 콘텐츠가 표시되는 순서가 의미에 영향을 미치는 경우, 올바른 읽기 순서는 프로그래밍 방식으로 결정되어야 한다.
 
@@ -174,7 +174,7 @@
 
 위 그림에서 노란색 박스를 친 부부은 콘텐츠가 표시되는 순서에 맞게 마크업되어야 한다. 보통 tab 키를 사용하는 사용자 혹은 스크린 리더 등을 사용하는 보조기기 사용자들은 "인기 검색어"에 대해서 알아보고자 할 경우, "인기 검색어" 다음으로 인기 검색어 1위부터 10위 까지 먼저 본 후 전체 순위를 보는 것이 일반적이기 때문에 그 순서에 맞게 마크업을 하는 것이 좋다.
 
-### 1.3.3 Sensory Characteristics
+### 1.3.3 충족 기준: Sensory Characteristics
 
 - 콘텐츠를 이해하고 작동하기 위해 제공된 지시문은 모양, 색상과 같은 구성요소의 시각적인 특성에만 의존해서는 안 된다.
 
@@ -206,7 +206,7 @@
 
 위 예시와 같이 버튼을 확실하게 표현해주어 링크라는 것을 확실히 인식할 수 있도록 해주어야 한다.
 
-### 1.3.4 Orientation
+### 1.3.4 충족 기준: Orientation
 
 - 특정 디스플레이 방향이 필수적이지 않는 한, 콘텐츠는 세로 또는 가로와 같이 한 방향으로만 보거나 작동되도록 제한해서는 안 된다.
 
@@ -224,20 +224,20 @@
 
 위 예시처럼 방향이 필수적으로 고정되어 있어야 하는 경우를 제외하고는 가로와 세로모드 모두를 지원해야한다.
 
-## 1.4 Distinguishable
+## 1.4 충족 기준: Distinguishable
 
 > Make it easier for users to see and hear content including separating foreground from background.
 
-### 1.4.1 Use of Color
+### 1.4.1 충족 기준: Use of Color
 
 - 색상은 정보 전달과 반응 유발, 시각적 요소 구별 등을 위한 시각적 수단으로만 사용되어서는 안 된다.
   - 즉, 색상을 사용할 때에는 해당 색으로써 어떠한 고유한 특정 의미를 가지고 사용되어야 한다는 것이다.
 
-### 1.4.2 Audio Control
+### 1.4.2 충족 기준: Audio Control
 
 - 어떤 오디오가 3초 이상 자동으로 재생되는 경우, 일시정지 또는 중지할 수 있는 메커니즘 혹은 오디오 음량을 전체 시스템 음량 볼륨과는 별도로 제어할 수 있는 메커니즘을 제공해야 한다.
 
-### 1.4.3 Contrast (Minimum)
+### 1.4.3 충족 기준: Contrast (Minimum)
 
 - 텍스트와 텍스트 이미지의 시각적 표현을 위한 명도대비율은 최소한 4.5:1 이상이 되어야 한다. 예외 사항은 아래와 같다.
 
@@ -247,32 +247,32 @@
 
   - **로고**: 로고 또는 상표명에 포함된 텍스트에는 어떠한 명도대비 요구사항도 없다.
 
-### 1.4.4 Resize text
+### 1.4.4 충족 기준: Resize text
 
 - 최대 200%까지 크기 조정이 가능해야 한다.
   - 예외: 자막과 텍스트 이미지
 
-### 1.4.5 Images of Text
+### 1.4.5 충족 기준: Images of Text
 
 - 정보는 텍스트 이미지보다 텍스트로 전달해야 한다. 예외는 아래와 같다.
   - **사용자 정의 가능한**: 텍스트 이미지가 사용자의 요구사항에 따라 시각적으로 사용자 정의 가능하다
   - **필수적인**: 텍스트의 특정 표현이 전달되는 정보에 필수적이다.
 
-### 1.4.6 Contrast (Enhanced)
+### 1.4.6 충족 기준: Contrast (Enhanced)
 
-### 1.4.7 Low or No Background Audio
+### 1.4.7 충족 기준: Low or No Background Audio
 
-### 1.4.8 Visual Presentation
+### 1.4.8 충족 기준: Visual Presentation
 
-### 1.4.9 Images of Text (No Exception)
+### 1.4.9 충족 기준: Images of Text (No Exception)
 
-### 1.4.10 Reflow
+### 1.4.10 충족 기준: Reflow
 
-### 1.4.11 Non-text Contrast
+### 1.4.11 충족 기준: Non-text Contrast
 
-### 1.4.12 Text Spacing
+### 1.4.12 충족 기준: Text Spacing
 
-### 1.4.13 Content on Hover or Focus
+### 1.4.13 충족 기준: Content on Hover or Focus
 
 ## Reference
 
