@@ -29,7 +29,7 @@
     <figcaption>
         <cite><a href="https://www.naver.com">html 태그 내에 lang 속성 사용</a> - by NAVER</cite>
     </figcaption>
-    <img src="images/language-page.PNG" width=100%/>
+    <img src="images/language-page.png" width=100%/>
 </figure>
 
 #### 2. 부분 언어(Parts of Language) - AA
@@ -46,7 +46,7 @@
         <cite><a href="https://en.dict.naver.com/#/entry/enko/b329d0e24f9b4de1af1f7eb9ad023966">영어 사전에서 lang 속성을 부분적으로 사용한 예시 - </a>
         by NAVER
     </figcaption>
-    <img src="images/language-parts.PNG" width=100%/>
+    <img src="images/language-parts.png" width=100%/>
 </figure>
 
 #### 3. 생소한 단어(Unusual words) - AAA
@@ -68,7 +68,7 @@
         <cite><a href="https://txsi.hometax.go.kr/docs/customer/dictionary/wordList.jsp">특수 용어사전을 메커니즘으로 제공 </a> -
         by 홈텍스
     </figcaption>
-    <img src="images/unusual-word.PNG" alt="홈텍스 용어사전" width=100%/>
+    <img src="images/unusual-word.png" alt="홈텍스 용어사전" width=100%/>
 </figure>
 
 #### 4. 약어(Abbreviations) - AAA
@@ -88,9 +88,9 @@
 #### 사례
 <figure>
     <figcaption>
-        <cite><a href="https://txsi.hometax.go.kr/docs/customer/dictionary/wordList.jsp">확장가능한 현태의 폼으로 약어의 본 뜻을 해설</a> - by Youtube
+        <cite><a href="https://txsi.hometax.go.kr/docs/customer/dictionary/wordList.jsp">확장가능한 형태의 폼으로 약어의 본 뜻을 해설</a> - by Youtube
     </figcaption>
-    <img src="images/Abbreviations.PNG" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/Abbreviations.png" alt="Surf Mesa-liy" width=100%/>
 </figure>
 
 #### 5. 독해 수준(Reading Level)
@@ -115,7 +115,7 @@
     <figcaption>
         <cite><a href="https://news.samsung.com/global/samsung-introduces-galaxy-tab-s-a-super-amoled-tablet">삼성 뉴스 페이지의 요약본 제공</a> - by Samsung
     </figcaption>
-    <img src="images/summary.PNG" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/summary.png" alt="Surf Mesa-liy" width=100%/>
 </figure>
 
 #### 6. 발음(Pronunciation) - AAA
@@ -181,7 +181,7 @@
     <figcaption>
         <cite><a href="https://en.dict.naver.com/#/main">동일한 네비게이션 예시</a> - by NAVER
     </figcaption>
-    <img src="images/navigation.PNG" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/navigation.png" alt="Surf Mesa-liy" width=100%/>
 </figure>
 
 #### 4. 일관된 식별(Identification) - AA
@@ -199,7 +199,7 @@
     <figcaption>
         <cite><a href="https://www.google.com/search?q=fastcampus">일관된 label 작성 예시</a> - by Google
     </figcaption>
-    <img src="images/label.PNG" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/label.png" alt="Surf Mesa-liy" width=100%/>
 </figure>
 
 #### 5. 요구에 의한 변경(Change on Request) - AAA
