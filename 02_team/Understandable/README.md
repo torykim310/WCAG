@@ -90,7 +90,7 @@
     <figcaption>
         <cite><a href="https://txsi.hometax.go.kr/docs/customer/dictionary/wordList.jsp">확장가능한 형태의 폼으로 약어의 본 뜻을 해설</a> - by Youtube
     </figcaption>
-    <img src="images/Abbreviations.PNG" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/abbreviations.png" alt="Surf Mesa-liy" width=100%/>
 </figure>
 
 #### 5. 독해 수준(Reading Level)
