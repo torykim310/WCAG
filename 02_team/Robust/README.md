@@ -52,3 +52,7 @@
 -Situation C: 상태 메세지가 프로세스 진행에 대한 정보를 전달하는 경우
     - [ARIA23](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23.html): `role` 속성을 `log`로 설정한다. 이는 암묵적으로 `aria-live="polite"`속성을 설정하기 때문에 현재 출력하고있는 음성메세지가 끝났을 때 새 컨텐츠를 읽어줍니다. ARIA19, ARIA 22와의 차이점은 `aria-atomic=false`로 설정되어있기 때문에 log가 부분적으로 변경된 경우 변경된 내용만 읽어줍니다.
     - ARIA22 + G193: `role="state"` + 보조장치(avatar)
+
+
+#### 참고자료
+- [Status Message](https://www.youtube.com/watch?v=Bsj2s58GvVA&list=PLtaz5vK7MbK1bAGhAFkidBzIRVrNqVo5j&index=19)
