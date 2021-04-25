@@ -68,7 +68,7 @@
         <cite><a href="https://txsi.hometax.go.kr/docs/customer/dictionary/wordList.jsp">특수 용어사전을 메커니즘으로 제공 </a> -
         by 홈텍스
     </figcaption>
-    <img src="images/unusual-word.png" alt="홈텍스 용어사전" width=100%/>
+    <img src="images/unusual-word.PNG" alt="홈텍스 용어사전" width=100%/>
 </figure>
 
 #### 4. 약어(Abbreviations) - AAA
@@ -90,7 +90,7 @@
     <figcaption>
         <cite><a href="https://txsi.hometax.go.kr/docs/customer/dictionary/wordList.jsp">확장가능한 형태의 폼으로 약어의 본 뜻을 해설</a> - by Youtube
     </figcaption>
-    <img src="images/Abbreviations.png" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/Abbreviations.PNG" alt="Surf Mesa-liy" width=100%/>
 </figure>
 
 #### 5. 독해 수준(Reading Level)
@@ -181,7 +181,7 @@
     <figcaption>
         <cite><a href="https://en.dict.naver.com/#/main">동일한 네비게이션 예시</a> - by NAVER
     </figcaption>
-    <img src="images/navigation.png" alt="Surf Mesa-liy" width=100%/>
+    <img src="images/navigation.PNG" alt="Surf Mesa-liy" width=100%/>
 </figure>
 
 #### 4. 일관된 식별(Identification) - AA
