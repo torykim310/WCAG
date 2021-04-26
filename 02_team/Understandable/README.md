@@ -7,8 +7,6 @@
 1. WCAG 중 이해의 용이성(understandable)을 준수하기 위한 기준 소개
 2. 각 기준을 준수한 웹 사이트 소개
 
-
-
 ## 1. WCAG 중 이해의 용이성(Understandable) 내용 소개
 이해의 용이성은 웹 페이지를 이용하는 사용자가 UI와 정보를 쉽게 이해하고 운용할 수 있음을 의미한다. 이해의 용이성이라 함은 장애가 없는 일반인의 입장에서는 물론 시각, 청각, 지적 장애 등을 가지고 있는 장애인의 입장에서도 웹 페이지의 구성요소들을 **이해**할 수 있어야 한다는 것이다. WCAG에서는 이해의 용이성을 평가하는 기준을 다음과 같이 3가지로 제시하고 평가의 단계를 세 가지(A, AA, AAA)로 구분한다.
 
@@ -123,7 +121,7 @@
 약어와 같이 그 특수한 발음을 알지 못하면 단어의 의미를 알기 힘든 경우에 이 문제점을 해결할 수 있는 메커니즘을 제공해야 한다.
 
 #### 적용가능 기술:
-- [G120](https://www.w3.org/WAI/WCAG21/Techniques/general/G120.html): 웹페이지 내에서 최소한 단어의 첫 등장시에 한번은 사용자가 이해가능한 발음을 제공한다. 단, 철자는 같지만 발음이 다른 단어가 포함된 경우 이 기술은 부적절 하다.
+- [G120](https://www.w3.org/WAI/WCAG21/Techniques/general/G120.html): 웹페이지 내에서 최소한 단어의 첫 등장시에 한번은 사용자가 이해가능한 발음을 제공한다. 단, 철자는 같지만 발음이 다른 단어가 포함된 경우 이 기술은 부적절하다.
 - [G121](https://www.w3.org/WAI/WCAG21/Techniques/general/G121.html): 발음을 들을 수 있는 링크를 제공한다.
 - [G62](https://www.w3.org/WAI/WCAG21/Techniques/general/G62.html): 발음을 들을 수 있는 용어 사전을 제공한다.
 - [H62](https://www.w3.org/WAI/WCAG21/Techniques/html/H62.html): ruby 태그를 통해 발음을 제공한다.
@@ -136,8 +134,6 @@
     <rp>)</rp>
 </ruby>
 ```
-
-#### 사례
 
 ### 2.2 평가 기준 2 - 예측 가능한 조작(Predictable)
 웹 페이지는 예측 가능한 방식으로 동작해야 한다.
@@ -176,15 +172,13 @@
 > 참고 1
 > onchange 이벤트를 통해 폼 내부의 요소가 변경되면 자동으로 제출되도록 유도하는 경우가 부적합한 사례라고 볼 수 있다.
 
-#### 사례
-
 #### 3. 일관된 네비게이션(Consistent Navigation) - AA
 페이지마다 반복되는 네비게이션 메뉴는 모든 페이지에서 동일한 순서로 제공되어야 한다. 이 기법은 반복되는 구성 요소에 대한 경험을 축적시켜 익숙한 환경을 만들어주기 위함이다. 단, 사용자가 네비게이션 순서를 변경한 경우는 제외한다.
 
 #### 적용가능 기술:
 - [G61](https://www.w3.org/WAI/WCAG21/Techniques/general/G61.html): 모든 페이지에 동일한 순서의 메뉴를 제공
 
-#### 사례
+#### 사례 - G61
 
 <figure>
     <figcaption>
@@ -202,7 +196,7 @@
     - 서로 다른 페이지에서 같은 기능을 수행하는 두 개의 탐색 버튼을 search와 find로 나누지 않고 통일한다.
     - 동일한 기능을 가지며, 동일한 text를 삽입한 두 개의 버튼에 aria-label을 다르게 설정한 경우 스크린 리더 사용자는 이를 다른 기능으로 인식할 가능성이 높다.
 
-#### 사례
+#### 사례 - G197
 
 <figure>
     <figcaption>
@@ -227,8 +221,6 @@
 - Situation C: 웹페이지가 팝업을 사용하는 경우
     - [H83](https://www.w3.org/WAI/WCAG21/Techniques/html/h83.html): 팝업대신 target을 _black로 설정해서 사용자의 권한 아래 새 창이 열리도록 설정한다. target 속성을 지원하지 않는 경우에는 ecmascrpit를 통해 사용자에게 새창이 열릴 것임을 알리고 이벤트가 동작하면 새창이 열리게 설정한다.
 
-#### 사례
-
 ### 2.3 평가 기준 3 - 입력 지원
 사용자의 실수를 회피하거나 수정할 수 있도록 지원해야 한다.
 
@@ -248,7 +240,7 @@
         - alertdialog 내부에 포커스 가능한 요소를 반드시 포함해야하며 모달이 열렸을 때 포커스가 그 요소로 이동해야 합니다.(동의, 닫기 등)
         - 가능하면 alertdialog가 사라졌을 때 원래 포커스로 이동해야 합니다.
     - ARIA21
-#### 사례
+#### 사례 - ARIA21
 
 <figure>
     <figcaption>
@@ -302,7 +294,7 @@
     - [G168](https://www.w3.org/WAI/WCAG21/Techniques/general/G164.html): 이 동작을 수행해도 되는지 사용자의 동의를 얻는 최종 확인 단계를 마련한다.
     - [G155](https://www.w3.org/WAI/WCAG21/Techniques/general/G155.html): checkbox를 클릭해야 제출가능한 방법처럼 실수를 예방할 수 있는 대책을 마련한다.
 
-#### 사례
+#### 사례 - G168
 
 <figure>
     <figcaption>
@@ -318,7 +310,7 @@
 - [G71](https://www.w3.org/WAI/WCAG21/Techniques/general/G71.html): 모든 페이지에 도움말 링크를 제공한다.
 - [G184](https://www.w3.org/WAI/WCAG21/Techniques/general/G184.html): AI 챗봇과 같이 도움을 줄 수 있는 보조장치를 제공한다.
 
-#### 사례
+#### 사례 - G184
 <figure>
     <figcaption>
         <cite><a href="https://www.samsungsvc.co.kr/">챗봇 서비스</a> - by Samgung
