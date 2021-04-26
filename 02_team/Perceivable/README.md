@@ -1,10 +1,10 @@
-# Perceivalbe
+# Perceivable
 
 ## 1.1 충족 기준: Text Alternatives
 
 > Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
 
-간단하게 요약하자면, 텍스트로 이루어진 컨텐츠가 아닌 경웨는 대체 텍스트를 제공해야 한다는 것이다. 대체 텍스트를 제공해야 하는 이유는 다음과 같이 명시되어 있다.
+간단하게 요약하자면, 텍스트로 이루어진 컨텐츠가 아닌 경우에는 대체 텍스트를 제공해야 한다는 것이다. 대체 텍스트를 제공해야 하는 이유는 다음과 같이 명시되어 있다.
 
 <figure>
   <figcaption>[ Intent for Text Alternatives ]</figcaption>
@@ -172,7 +172,7 @@
   <img src="./img/meaningful-sequence.png" width="200">
 </figure>
 
-위 그림에서 노란색 박스를 친 부부은 콘텐츠가 표시되는 순서에 맞게 마크업되어야 한다. 보통 tab 키를 사용하는 사용자 혹은 스크린 리더 등을 사용하는 보조기기 사용자들은 "인기 검색어"에 대해서 알아보고자 할 경우, "인기 검색어" 다음으로 인기 검색어 1위부터 10위 까지 먼저 본 후 전체 순위를 보는 것이 일반적이기 때문에 그 순서에 맞게 마크업을 하는 것이 좋다.
+위 그림에서 노란색 박스를 친 부분은 콘텐츠가 표시되는 순서에 맞게 마크업되어야 한다. 보통 tab 키를 사용하는 사용자 혹은 스크린 리더 등을 사용하는 보조기기 사용자들은 "인기 검색어"에 대해서 알아보고자 할 경우, "인기 검색어" 다음으로 인기 검색어 1위부터 10위 까지 먼저 본 후 전체 순위를 보는 것이 일반적이기 때문에 그 순서에 맞게 마크업을 하는 것이 좋다.
 
 ### 1.3.3 충족 기준: Sensory Characteristics
 
@@ -197,7 +197,7 @@
   <img src="./img/link-example.png" width="600">
 </figure>
 
-위 문장을 보면 **"미리보기 Cache 삭제하기"** 에 파란색으로 링크가 걸리 것을 확인할 수 있다. 이러한 형태의 링크 설명은 인터넷 사용을 하면서 흔히 볼 수 있을 것이다. 하지만 위의 차트 예시와 마찬가지로 색을 구분하지 못하는 저시력자, 시각 장애인은 해당 텍스트가 링크인지 아닌지 전혀 알 길이 없다. 따라서 저렇게 표현되기 보다는
+위 문장을 보면 **"미리보기 Cache 삭제하기"** 에 파란색으로 링크가 걸린 것을 확인할 수 있다. 이러한 형태의 링크 설명은 인터넷 사용을 하면서 흔히 볼 수 있을 것이다. 하지만 위의 차트 예시와 마찬가지로 색을 구분하지 못하는 저시력자, 시각 장애인은 해당 텍스트가 링크인지 아닌지 전혀 알 길이 없다. 따라서 저렇게 표현되기 보다는
 
 <figure>
   <figcaption>[ Link Sample (1) ]</figcaption>
