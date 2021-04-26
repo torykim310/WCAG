@@ -53,6 +53,8 @@
     - [ARIA23](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA23.html): `role` 속성을 `log`로 설정한다. 이는 암묵적으로 `aria-live="polite"`속성을 설정하기 때문에 현재 출력하고있는 음성메세지가 끝났을 때 새 컨텐츠를 읽어줍니다. ARIA19, ARIA 22와의 차이점은 `aria-atomic=false`로 설정되어있기 때문에 log가 부분적으로 변경된 경우 변경된 내용만 읽어줍니다.
     - ARIA22 + G193: `role="state"` + 보조장치(avatar)
 
+### 소결론
+견고성에 대해 학습하고 사례를 찾아보면서 견고성을 준수하고있는 사이트가 거의 없다는 것을 알게됐다. 고의가 아니라 견고성에 대한 지식을 접하지 못해서 그릇된 정보를 전달할 수 도 있을 것이라는 생각이 들었다. 이번 과제를 통해 견고성에 대한 지식을 알릴 수 있는 기회가 많아졌으면 좋겠다고 생각했다. 다른사람들에게 접근성에 대해 설명할 수 있을 정도로 꾸준히 학습해야겠다.
 
 #### 참고자료
 - [Status Message](https://www.youtube.com/watch?v=Bsj2s58GvVA&list=PLtaz5vK7MbK1bAGhAFkidBzIRVrNqVo5j&index=19)
