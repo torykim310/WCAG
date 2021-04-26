@@ -18,7 +18,7 @@
 
 ### 2.1 평가 기준 1 - 글의 가독성(Readable)
 
-#### 2.1.1 충족기준 
+#### 2.1.1 충족기준
 
 #### 1. 페이지의 언어(Language of Page) - A
 어떤 언어를 사용했는지 올바르게 표기하여 사용자 에이전트가 페이지에 표기된 언어를 바르게 읽을 수 있도록 한다. 이 기법은 보조 기기를 사용해 메세지를 전달받는 사용자도 올바른 정보를 전달받을 수 있게 한다.
@@ -127,6 +127,7 @@
 - [G121](https://www.w3.org/WAI/WCAG21/Techniques/general/G121.html): 발음을 들을 수 있는 링크를 제공한다.
 - [G62](https://www.w3.org/WAI/WCAG21/Techniques/general/G62.html): 발음을 들을 수 있는 용어 사전을 제공한다.
 - [H62](https://www.w3.org/WAI/WCAG21/Techniques/html/H62.html): ruby 태그를 통해 발음을 제공한다.
+
 ```
 <ruby>
     <rb>WCAG</rb>
@@ -144,18 +145,18 @@
 #### 2.2.1 충족기준
 
 #### 1. 포커스 시(On Focus) - A
-사용자 인터페이스에서 구성요소에 포커스 되었을 때, 화면이 갑자기 이동하는 등 맥락이 변경되어서는 안된다. 이는 유저가 문서 내부에서 콘텐츠를 이동할 때 예측가능한 범위로 이동하여 혼란을 방지하기 위함이다. 
+사용자 인터페이스에서 구성요소에 포커스 되었을 때, 화면이 갑자기 이동하는 등 맥락이 변경되어서는 안된다. 이는 유저가 문서 내부에서 콘텐츠를 이동할 때 예측가능한 범위로 이동하여 혼란을 방지하기 위함이다.
 
 예시
-- 폼 요소가 포커스를 받았을 때 자동으로 제출되지 않아야 한다. 
-- 구성 요소가 포커스를 받았을 때 새창이 실행되면 안된다. 
-- 구성 요소가 포커스를 받았을 때 다른 구성 요소로 변경되면 안된다. 
+- 폼 요소가 포커스를 받았을 때 자동으로 제출되지 않아야 한다.
+- 구성 요소가 포커스를 받았을 때 새창이 실행되면 안된다.
+- 구성 요소가 포커스를 받았을 때 다른 구성 요소로 변경되면 안된다.
 
 #### 적용가능 기술:
 - [G107](https://www.w3.org/WAI/WCAG21/Techniques/general/G107.html) :`:focus` 가상 클래스 선택자를 사용하는 것 보다, `:active` 가상 클래스 선택자를 사용한다. - 문맥의 변경이 포커스와 무관하며 사용자의 클릭에 의해서만 문맥을 변경한다.
 
 > 참고 1
-> 문맥의 변경이란 새창이 띄워지거나 문맥의 흐름이 갑자기 변경되는 것 처럼 전체 페이지를 동시에 볼 수 없는 사용자가 문맥의 변경을 인식하지 못하는 경우를 말한다. 
+> 문맥의 변경이란 새창이 띄워지거나 문맥의 흐름이 갑자기 변경되는 것 처럼 전체 페이지를 동시에 볼 수 없는 사용자가 문맥의 변경을 인식하지 못하는 경우를 말한다.
 
 > 참고 2
 > 유저 에이전트, 뷰포트, 포커스 이 세가지 모두 문맥의 변경에 포함된다.
@@ -200,7 +201,7 @@
     - 각 페이지 링크를 page 1, page 2 ... 와 같이 일관된 패턴으로 작성한다.
     - 서로 다른 페이지에서 같은 기능을 수행하는 두 개의 탐색 버튼을 search와 find로 나누지 않고 통일한다.
     - 동일한 기능을 가지며, 동일한 text를 삽입한 두 개의 버튼에 aria-label을 다르게 설정한 경우 스크린 리더 사용자는 이를 다른 기능으로 인식할 가능성이 높다.
-    
+
 #### 사례
 
 <figure>
@@ -211,7 +212,7 @@
 </figure>
 
 #### 5. 요구에 의한 변경(Change on Request) - AAA
-페이지 전체에 걸쳐 사용자의 요청에 의해서만 맥락이 변경될 수 있도록 설계한다. 동시에 이 설정을 해제할 수 있는 메커니즘을 제공해야 한다. 
+페이지 전체에 걸쳐 사용자의 요청에 의해서만 맥락이 변경될 수 있도록 설계한다. 동시에 이 설정을 해제할 수 있는 메커니즘을 제공해야 한다.
 
 #### 적용가능 기술:
 - Situation A: 웹 페이지가 자동 업데이트되는 경우
@@ -219,7 +220,7 @@
         - 컨텐스트를 자동으로 갱신하는 뉴스 페이지처럼 주기적으로 새로고침이 일어나는 경우 보조 기기를 이용하는 사용자는 방향을 잃게 된다. 따라서 업데이트 버튼을 통해 페이지가 갱신되도록 한다.
         - ajax 처럼 새로운 데이터를 비동기로 빈번하게 업데이트 하는 경우 업데이트가 사용자의 권한을 벗어나기 때문에 혼란을 야기할 수 있다. 이런 경우에도 데이터를 갱신하는 버튼을 제공해야 한다.
 
-- Situation B: 페이지가 자동으로 리디렉트 하는 경우 
+- Situation B: 페이지가 자동으로 리디렉트 하는 경우
     - [SVR1](https://www.w3.org/WAI/WCAG21/Techniques/server-side-script/SVR1.html) 클라이언트 사이드 대신 서버 사이드에서 리디렉션을 구현한다.
         - 클라이언트 사이드에서 리디렉션을 구현하게 되면 브라우저가 HTML 문서를 받아서 리디렉션을 해야하는지 알기까지 일정 시간이 소요된다. 그 시간 내에 콘텐츠가 표기되면 문맥을 읽어가는 도중에 새로운 페이지로 리디렉션되기 때문에 사용자가 혼란스러울 수 있다.
     - [H76](https://www.w3.org/WAI/WCAG21/Techniques/html/H76.html): 서버 사이드 제어 권한이 없어서 클라이언트 사이드의 meta 태그를 사용해 리디렉션을 해야하는 경우에는 content를 0 으로 설정해서 메타 태그를 읽는 즉시 리디렉션하도록 설정한다.
@@ -231,26 +232,22 @@
 ### 2.3 평가 기준 3 - 입력 지원
 사용자의 실수를 회피하거나 수정할 수 있도록 지원해야 한다.
 
-#### 2.3.1 충족기준 
+#### 2.3.1 충족기준
 
 #### 1. 오류 식별(Error Identification) - A
 입력 오류가 감지되면, 오류를 일으킨 항목을 식별해서 오류 메세지를 사용자에게 전달합니다.
 #### 적용가능 기술:
 - Situation A: 폼 내부에 필수로 작성해야 하는 구성 요소가 있는 경우
-    - [G83](https://www.w3.org/WAI/WCAG21/Techniques/general/G83.html): text로 작성되지 않은 필수 구성 요소가 있음을 알려준다.
-    - [ARIA21](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA21.html)aria-required를 기제하거나, 더 복잡한 로직이 필요한 경우 aria-invalid 속성을 기제한다.
-        - aria-invalid를 통해 에러 메세지를 보내고 싶은 경우, [aria-describedby](https://nuli.navercorp.com/community/article/1132700?email=true) 속성에 특정 id 값을 삽입하여 해당 id 요소에 설정한 텍스트를 읽어줄 수 있도록 설계한다. 또는 aria-errormessage 속성을 사용해 aria-invalid가 true인 경우에 에러 메세지를 노출할 수 있다.
-    - alert 함수를 사용해서 사용자 에이전트가 에러 메세지를 읽을 수 있게 한다.
-- 특정한 형식의 데이터 혹은 값을 작성해야하는 경우
-    - role을 [alertdialog](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html)로 설정한 에러메세지를 모달로 통지합니다. 
+    - [G83](https://www.w3.org/WAI/WCAG21/Techniques/general/G83.html): `alert`처럼 텍스트를 노출할 수 있는 방식을 통해 작성되지 않은 입력 구성 요소가 있음을 알린다.
+    - [ARIA21](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA21.html)`aria-required`를 기제하거나, 더 복잡한 로직이 필요한 경우 aria-invalid 속성을 기제한다.
+        - `aria-invalid`를 사용해 에러 메세지를 보내고 싶은 경우, `aria-errormessage` 속성에 특정 `id` 값을 삽입하여 해당 id가 가리키는 요소의 텍스트를 읽어줄 수 있도록 설계한다. 이때는 `aria-invalid`가 `true`인 경우에만 에러 메세지를 전달하게 된다.
+- Situation B: 특수한 형식의 데이터 혹은 값을 작성해야하는 경우
+    - [ARIA18](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html):  `role` 속성을 [alertdialog](https://www.w3.org/WAI/WCAG21/working-examples/aria-alertdialog-identify-errors/)로 설정하고 에러메세지를 모달로 통지합니다.
         - 이 모달이 어떤 의미인지 알려주기 위해 aria-label 또는 aria-labelledby 속성을 포함해야 합니다.
         - aria-describedby를 설정해서 상세한 내용을 전달할 수 있습니다.
         - alertdialog 내부에 포커스 가능한 요소를 반드시 포함해야하며 모달이 열렸을 때 포커스가 그 요소로 이동해야 합니다.(동의, 닫기 등)
         - 가능하면 alertdialog가 사라졌을 때 원래 포커스로 이동해야 합니다.
-    - 단순히 에러메세지를 전달하고 싶은경우 role을 alert로 설정할 수 있습니다.
-    - aria-invalid와 aria-errormessage 속성을 사용해 에러 메세지를 읽어준다.
-    - text로 충분히 이해할 수 있는 설명을 해준다.
-    - alert 함수를 사용해서 사용자 에이전트가 에러 메세지를 읽을 수 있게 한다.
+    - ARIA21
 #### 사례
 
 <figure>
@@ -266,45 +263,44 @@
 - [G131](https://www.w3.org/WAI/WCAG21/Techniques/general/G131.html):입력 구성 요소와의 관계를 설명할 수 있는 label을 제공한다.
     - [ARIA1](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA1.html): 상세한 설명이 필요한 경우 aria-describedby 속성을 기제해 해당 구성 요소에 대한 상세 메세지를 전달한다.
     - [ARIA9](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA9.html): 간단한 설명이 필요한 경우에는 aria-labelledby 속성을 기제해 해당 구성 요소에 대한 메세지를 전달한다.
-        - 단어처럼 매우 간단하게 label을 제공하고 싶은경우 aria-label 속성에 원하는 설명을 작성할 수 있다. 단 aria-labelledby 속성의 우선순위가 더 높기 때문에 두 속성 모두가 사용된 경우 aria-labelledby를 설명한다.
+        - 간단하게 label을 설정하고 싶은경우 aria-label 속성에 원하는 설명을 작성할 수 있다. 단 aria-labelledby 속성의 우선순위가 더 높기 때문에 두 속성 모두가 사용된 경우 aria-labelledby를 설명한다.
     - [ARIA17](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA17.html): 공통된 label을 설정해야 하는 경우에는 role을 group으로 설정하고 label 속성을 삽입한 후 그 내부에 요소들을 삽입할 수 있다.
-    - 입력 형식을 text로 제공한다.
-    - text로 label을 삽입해서 유저 에이전트가 입력 구성 요소와의 관계를 읽어줄 수 있게 설정한다.
-    - form 내부에 fieldset으로 구역을 나누고 legend에 required를 텍스로 삽입한다.
+- [H44](https://www.w3.org/WAI/WCAG21/Techniques/html/H44.html): label 요소를 사용한다.
+- [H71](https://www.w3.org/WAI/WCAG21/Techniques/html/H71.html): fieldset으로 구역을 나누고 legend를 삽입해서 폼에 대한 설명을 제공한다.
 
 #### 3. 오류 수정 제안(Error Suggestion) - AA
-입력 오류를 감지했을 때 보안상 문제가 없는 선에서 사용자에게 수정안을 제시한다.
+사용자가 입력한 값에 오류가 있다면 보안상 문제가 없는 선에서 수정안을 제시한다.
 
 #### 적용가능 기술:
-- 필수로 작성해야하는 구성 요소에 아무 정보도 입력하지 않은 경우.
-    - 입력해야 할 구성요소가 남아있다는 것을 text로 설명한다.
-    - aria-required 속성을 사용한다.
-- 특정한 형식의 데이터 혹은 값을 작성해야하는 경우
-    - role을 [alertdialog](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html)로 설정하고 수정안을 모달로 제공합니다. 세부사항은 오류 식별에서 설명한 방법과 같습니다.
-    - 수정안을 text로 제공합니다.
-    - alert 함수를 사용해서 수정안을 제공한다.
+- Situation A: 필수로 작성해야하는 구성 요소에 어떠한 정보도 입력하지 않은 경우.
+    - [G83](https://www.w3.org/WAI/WCAG21/Techniques/general/G83): 입력해야 할 구성요소가 남아있다는 것을 text를 통해 전달한다.
+    - [ARIA2](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html): aria-required 속성을 사용한다.
+- Situation B: 특정한 형식의 데이터 혹은 값을 작성해야하는 경우
+     - [ARIA18](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html):  `role`을 [alertdialog](https://www.w3.org/WAI/WCAG21/working-examples/aria-alertdialog-identify-errors/)로 설정하고 수정안을 모달로 통지합니다.
+        - 이 모달이 어떤 의미인지 알려주기 위해 aria-label 또는 aria-labelledby 속성을 포함해야 합니다.
+        - aria-describedby를 설정해서 상세한 내용을 전달할 수 있습니다.
+        - alertdialog 내부에 포커스 가능한 요소를 반드시 포함해야하며 모달이 열렸을 때 포커스가 그 요소로 이동해야 합니다.(동의, 닫기 등)
+        - 가능하면 alertdialog가 사라졌을 때 원래 포커스로 이동해야 합니다.
 
-- 정해진 값의 집합중 하나를 꼭 입력해야 하는 경우
-    - role을 [alertdialog](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html)로 설정하고 집합을 모달로 제공합니다. 세부사항은 오류 식별에서 설명한 방법과 같습니다.
-    - 수정안(집합)을 text로 제공합니다.
-    - alert 함수를 사용해서 수정안집합)을 제공한다.
+- Situation C: 정해진 집합 내에서 입력해야하는 경우
+    - ARIA18: role을 [alertdialog](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA18.html)로 설정하고 입력가능한 집합을 모달로 제공합니다. 세부사항은 오류 식별에서 설명한 방법과 같습니다.
 
 #### 4. 오류 예방 - 법률, 금융, 데이터(Error Prevention - Legal, Financial, Data) - AA
-사용자에 대한 법률을 이행하해야 하고, 금융 거래가 발생하거나, 데이터 스토리지에서 사용자가 제어 가능한 데이터를 수정 또는 삭제하거나, 사용자의 테스트를 제출하는 웹페이지의 경우, 적어도 다음 중 하나를 준수 해야한다.
+법률 혹은 금융 거래와 연관되어 있거나, 데이터 스토리지에서 데이터를 수정 또는 삭제하는 경우 적어도 다음 중 하나를 준수 해야한다.
 
 - Reversible: 제출 사항을 되돌릴 수 있어야 한다.
 - Checked: 사용자가 입력한 데이터는 오류 사항을 점검할 수 있어야하고, 사용자가 입력 데이터를 수정할 수 있는 기회를 제공해야 한다.
 - Comfirmed: 제출하기 전에 올바른 정보인지 확인하고 검토할 수 있는 메커니즘을 제공해야 한다.
 
 #### 적용가능 기술:
-- 소득세를 신고하거나 물품을 구입하는 것 처럼 법접인 거래가 발생하는 경우
-    - 해당 웹 페이지는 취소 가능 절차를 충분히 설명해야한다.
-    - 해당 웹 페이지는 제출 사항을 수정할 수 있는 메커니즘을 제공해야 한다.
+- Situation A: 소득세를 신고하거나 물품을 구입하는 것 처럼 법적인 거래가 발생하는 경우
+    - [G164](https://www.w3.org/WAI/WCAG21/Techniques/general/G164.html): 해당 웹 페이지는 수정 혹은 취소 가능 절차를 충분히 설명해야한다.
+    - [G98](https://www.w3.org/WAI/WCAG21/Techniques/general/G98.html): 해당 웹 페이지는 제출 사항을 수정할 수 있는 메커니즘을 제공해야 한다.
     - 제출전 검토할 수 있는 요약페이지를 제공한다.
-- 정보가 삭제되는 경우
-    - 복구할 수 있는 기능을 제공한다.
-    - 정말 이 동작을 이행해도 되는지 사용자의 동의를 얻는 최종 확인 단계를 마련한다.
-    - checkbox를 클릭해야 제출이 가능하도록 한다.
+- Situation B: 정보가 삭제되는 경우
+    - [G99](https://www.w3.org/WAI/WCAG21/Techniques/general/G99.html): 복구할 수 있는 방법을 제공한다.
+    - [G168](https://www.w3.org/WAI/WCAG21/Techniques/general/G164.html): 이 동작을 수행해도 되는지 사용자의 동의를 얻는 최종 확인 단계를 마련한다.
+    - [G155](https://www.w3.org/WAI/WCAG21/Techniques/general/G155.html): checkbox를 클릭해야 제출가능한 방법처럼 실수를 예방할 수 있는 대책을 마련한다.
 
 #### 사례
 
@@ -319,9 +315,9 @@
 사용자가 현재 작업중인 내용을 직접적으로 살펴보지 않고도 상황에 맞는 도움말을 통해 작업을 수행할 수 있게 한다. 상황별 도움말은 label이 기능을 충분히 설명하지 못하는 경우 제공한다.
 
 #### 적용가능 기술:
-- 모든 웹 페이지에 도움말 링크를 제공한다.
-- AI 챗봇과 같이 도움을 줄 수 있는 보조장치를 제공한다.
-- 
+- [G71](https://www.w3.org/WAI/WCAG21/Techniques/general/G71.html): 모든 페이지에 도움말 링크를 제공한다.
+- [G184](https://www.w3.org/WAI/WCAG21/Techniques/general/G184.html): AI 챗봇과 같이 도움을 줄 수 있는 보조장치를 제공한다.
+
 #### 사례
 <figure>
     <figcaption>
@@ -340,10 +336,12 @@
 #### 참고자료:
 
 - [Aria-controls](https://nuli.navercorp.com/community/article/1132879?email=true)
-- [WCAG 2.1](https://a11y.gitbook.io/wcag/) 
+- [WCAG 2.1](https://a11y.gitbook.io/wcag/)
 
 - [WAI-ARIA 가이드라인](https://github.com/lezhin/accessibility/blob/master/aria/README.md#status)
 
 - [google-aria](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content?hl=ko)
 
-- [WCAG 2.1](https://www.w3.org/TR/WCAG21/) 
+- [WCAG 2.1](https://www.w3.org/TR/WCAG21/)
+
+-[html-web-aria](https://yongbeomkim.github.io/html/html-web-aria/#22-%EC%98%A4%EB%A5%98-%EC%84%A4%EB%AA%85aria-errormessageid-reference-)
